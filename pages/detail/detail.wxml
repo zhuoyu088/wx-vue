@@ -1,0 +1,27 @@
+<!--pages/detail/detail.wxml-->
+<view>
+<image src="{{detailImf[0].img}}" />
+{{detailImf[0].title}}
+<view>$：{{detailImf[0].price}} </view>
+</view>
+
+
+<view class='tabbar'>
+<view class='pic'>
+<image src="../../imgs/detailmsg.png" />
+<image src="../../imgs/detailcart.png" />
+</view>  
+
+
+<view class='btnone' bindtap='addToCart' data-id='{{detailImf[0].id}}'>加入购物车</view>
+<view class='btntwo'>立即购买</view>
+</view>
+
+ <view>
+<image src="https://img.alicdn.com/imgextra/i2/1795846248/TB2geunXYgjyKJjy0FbXXaCtXXa_!!1795846248.jpg" />
+</view>
+
+<view>
+<image src="https://img.alicdn.com/imgextra/i4/1795846248/TB2ihVUkASWBuNjSszdXXbeSpXa_!!1795846248.jpg" />
+</view> 
+

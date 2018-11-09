@@ -1,0 +1,73 @@
+/* pages/all/all.wxss */
+page,
+.page,
+.page__bd{
+    height: 100%;
+}
+.page__bd{
+    padding-bottom: 0;
+}
+.weui-tab__content{
+    padding-top: 60px;
+    text-align: center;
+}
+.gkd image{
+    height: 90px;
+}
+
+
+.page{
+  font-size: 12px;
+}
+
+.weui-navbar__title{
+  font-size: 12px;
+
+      
+
+}
+.weui-navbar{
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  float: left;
+  position:fixed;
+  top: 125px;
+
+}
+
+.kkp{
+  font-size: 12px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dedede;
+}
+
+.weui-tab__content{
+  width: 85%;
+  float: right;
+  height: 100%;
+
+}
+.imgs{
+  border: 1px solid #dedede;
+}
+.imgs image{
+  width: 100px;
+  height: 100px;
+  margin-left:15% 
+}
+
+.imgs .txt{
+  width: 50%;
+  float: right;
+  height: 20px;
+}
+
+.imgs .add image{
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin-top: 64px;
+  margin-right: 10px; 
+}

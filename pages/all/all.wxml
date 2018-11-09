@@ -1,0 +1,60 @@
+<!--pages/all/all.wxml-->
+<view class='gkd'><image src="../../imgs/zhuoyu2.png" /></view>
+
+<view class='kkp'>店铺首页</view>
+
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-tab">
+            <view class="weui-navbar">
+                <block wx:for="{{tabs}}" wx:key="*this">
+                    <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+                        <view class="weui-navbar__title">{{item}}</view>
+                    </view>
+                </block>
+             
+            </view>
+            <view>
+                <view class="weui-tab__contenta" hidden="{{activeIndex != 0}}"
+                wx:for="{{allList}}" wx:key="{{index}}">
+                <view class='imgs' bindtap='toDetail'>
+                  <image src="{{item.img}}" />
+                  <view class='txt'><text>{{item.title}}   </text>
+                  <text>   价格:${{item.price}}</text>
+
+                  </view>
+                  </view>
+                </view>
+
+                <view class="weui-tab__contenta" hidden="{{activeIndex != 1}}"
+                wx:for="{{allList}}" wx:key="{{index}}">
+                 
+                  <view class='imgs' bindtap='toDetail'>
+                  <image src="{{item.img}}" />
+                  <view class='txt'><text>{{item.title}}   </text>
+                  <text>   价格:${{item.price}}</text>
+
+                  </view>
+                  </view>
+                  
+                  
+                  
+                </view>
+                <view class="weui-tab__contenta" hidden="{{activeIndex != 2}}"
+                wx:for="{{allLista}}" wx:key="{{index}}">
+                <view class='imgs' bindtap='toDetail'>
+                  <image src="{{item.img}}" />
+                  <view class='txt'><text>{{item.title}}   </text>
+                  <text>   价格:${{item.price}}</text>
+
+                  </view>
+                  </view>
+
+                  
+
+
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

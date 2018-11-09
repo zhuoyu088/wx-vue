@@ -1,0 +1,51 @@
+/* pages/mine/mine.wxss */
+.pic{
+  height: 70px;
+}
+
+.pic view{
+  width: 25%;
+  height: 70px;
+  float: left;
+  font-size: 12px;
+  color: gray;
+}
+
+.pic view image{
+  width: 30px;
+  height: 30px;
+  display: flex;
+  margin-left: 20px;
+  margin-top: 20px;
+  
+}
+
+.weui-cell{
+  font-size: 12px;
+}
+
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userAvatar {
+  overflow:hidden;  
+  display: block;  
+  width: 160rpx;  
+  height: 160rpx;  
+  margin: 20rpx;  
+  margin-top: 50rpx;  
+  border-radius: 50%;  
+  border: 2px solid #fff;  
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);  
+}
+.userName-wrap {
+  margin-top: 30rpx;
+  font-size: 35rpx;
+}
+.userName {
+  color: #FF5687;
+}
+

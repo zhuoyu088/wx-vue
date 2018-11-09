@@ -1,0 +1,47 @@
+<!--pages/home/home.wxml-->
+<view class="page">
+  
+    <view class="page__bd">
+        <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+                <view class="weui-search-bar__box">
+                    <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+                    <input type="text" class="weui-search-bar__input" placeholder="搜索" value="{{inputVal}}" focus="{{inputShowed}}" bindinput="inputTyping" />
+                    <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+                        <icon type="clear" size="14"></icon>
+                    </view>
+                </view>
+                <label class="weui-search-bar__label" hidden="{{inputShowed}}" bindtap="showInput">
+                    <icon class="weui-icon-search" type="search" size="14"></icon>
+                    <view class="weui-search-bar__text">输入商品名称搜索</view>
+                </label>
+            </view>
+            <view class="weui-search-bar__cancel-btn" hidden="{{!inputShowed}}" bindtap="hideInput">取消</view>
+        </view>
+        <view class="weui-cells searchbar-result" wx:if="{{inputVal.length > 0}}">
+        </view>
+    </view>
+</view>
+
+<view class='what'><text>主粮</text><text>零食</text><text>玩具</text><text>日常用品</text><text>医疗保健</text></view>
+
+
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="{{imgindex}}">
+    <swiper-item class="swipera">
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+
+<view class='the'><image src="../../imgs/emmmmm.png" /></view>
+<view class='fuck'><image src="../../imgs/emm.png" /></view>
+
+
+<view wx:for="{{suibian}}"  wx:key="{{index}}">
+<text>{{item.title}}
+</text>
+<image src="{{item.img}}"  bindtap='toDetail'/>
+</view>

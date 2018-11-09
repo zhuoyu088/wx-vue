@@ -1,0 +1,20 @@
+/* pages/cart/cart.wxss */
+.amount button{
+  width: 20%;
+}
+
+.myCart{
+  display: flex;
+   border: 1px solid #dedede;
+}
+
+.myCart image{
+  width: 100px;
+  height: 100px;
+}
+
+
+.myCart .wenzi{
+  margin-left:50px; 
+  
+}

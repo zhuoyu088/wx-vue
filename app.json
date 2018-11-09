@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/list/list",
+    "pages/cart/cart",
+    "pages/mine/mine",
+    "pages/all/all",
+    "pages/detail/detail"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "imgs/home.png",
+        "selectedIconPath": "imgs/home1.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "vip会员",
+        "iconPath": "imgs/heart.png",
+        "selectedIconPath": "imgs/heart1.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "imgs/cart1.png",
+        "selectedIconPath": "imgs/cart.png"
+      },
+      {
+        "pagePath": "pages/all/all",
+        "text": "所有商品",
+        "iconPath": "imgs/rooppas.png",
+        "selectedIconPath": "imgs/rooppas1.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "会员中心",
+        "iconPath": "imgs/vip.png",
+        "selectedIconPath": "imgs/vip1.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "六角兽VIP商城",
+    "navigationBarTextStyle": "black"
+  }
+}
